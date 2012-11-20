@@ -1,0 +1,18 @@
+<hr />
+<a id="showDataLink" href="#" onclick="getElementById('dump').style.display='block'; getElementById('showDataLink').style.display='none'; getElementById('hideDataLink').style.display='block';">Show data dump</a>
+<a id="hideDataLink" href="#" onclick="getElementById('dump').style.display='none'; getElementById('showDataLink').style.display='block'; getElementById('hideDataLink').style.display='none';" style="display: none;">Hide data</a>
+
+<div id="dump" style="display:none;">
+	<hr />
+	Environment: <%= Sinatra::Application.environment() %> <br /> 
+	Plist File: <%= @file %>
+	<hr />
+	<pre>
+		<%= anchors.uniq %> 
+	</pre>
+	<hr />
+	User Class: <%= @users.class %> 
+	<pre>
+		<%= YAML::dump @users.sort %>
+	</pre>
+</div>

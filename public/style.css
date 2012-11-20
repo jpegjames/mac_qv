@@ -1,0 +1,32 @@
+ul { list-style: none;  }
+a { color: #6791bb; }
+a:hover { color: #2a4968; }
+
+.container { text-align: center; }
+.container * { text-align: left; }
+.user_box { display: inline-block; height: 285px; width: auto; overflow: auto; overflow-x: hidden; padding: 5px 0 5px 5px; margin: 0; border: 1px solid #dddddd; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+.user_box li { padding: 0; margin: 0; overflow: hidden; border-bottom: 1px solid #f0f0f0; }
+.user_box li:nth-child(odd) { background: #f8f8f8; }
+.user_box li:hover { background: #cceaf8; }
+.user_box li a { padding-right: 200px; display: block; width: 100%; text-decoration: none; }
+.user_box li a:hover { text-decoration: underline; }
+.user_box li a:active { color: #682a2a; }
+.anchors { font-family: verdana, arial; text-transform: uppercase; display: inline-block; width: 11px; margin: 0; padding: 2px 0; font-size: 9px; background: #f1f1f1; -moz-border-radius: 4px; -webkit-border-radius: 4px; }
+.anchors * { cursor: crosshair !important;}
+.anchors li { padding: 0; margin: 0; text-align: center; line-height: 11px; }
+.anchors li * { display: inline-block; width: 11px; text-align: center; -moz-border-radius: 4px; -webkit-border-radius: 4px; }
+.anchors a { color: #000000; text-decoration: none; }
+.anchors a:hover { color: #ffffff; background: #666666; }
+.anchors a.none { color: #999999;}
+.anchors a.none:hover { background: #cccccc; }
+
+.user_info { display: inline-block; margin: 0 auto; padding: 20px 60px; background: #f8f8f8; border: 1px solid #dddddd; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+.user_info p { margin: 5px 0; }
+.user_info .user_name { font-weight: bold; }
+
+.header { font-size: 20px; text-align: center; padding: 20px 0 10px; margin-bottom: 20px; border-bottom: 1px solid #dddddd; text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4); }
+.header .big { font-size: 150%; }
+.header, .footer { font-family: "Lucida Grande",lucida,"Helvetica Neue",helvetica,arial,sans-serif; }
+.footer { border-top: 1px #dddddd solid; padding: 4px 8px; margin: 20px 0 0 0; text-align: center; }
+.footer, .footer * { font-size: 8px; color: #999999; text-decoration: none; letter-spacing: 1px; color: #A8A8A8; }
+.footer a:hover { color: #666666; }

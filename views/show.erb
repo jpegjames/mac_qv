@@ -1,0 +1,12 @@
+<div class="user_info">
+	<div class="user_prints">
+		User <span class="user_name"><%= params[:user] %></span> 
+		has printed <%= @user['printed'] %> page<%= "s" if @user['printed'] != 1  %>.
+	</div>
+	<div class="user_recent_print">
+		<%= "Most recent print was on " 	if @user['printed'] > 0 %>
+		<%= "Last updated "		 						if @user['printed'] == 0 %>
+		<span class="date"><%= pretty_time(@user['lastmod']) %></span>.
+	</div>
+	<p><a href="/">back</a></p>
+</div>

@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>MOPQV <%= @header ? "| " + @header : "[Mac OS Print Quota Viewer]" %></title>
+	<meta name="author" content="James Pierce (http://james.is)">
+	<link href="/style.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div class="header">
+		<span class="big">MOPQV</span> [Mac OS Print Quota Viewer]
+	</div>
+	<div class="container">
+		<%= yield %>
+	</div>
+	<div class="footer">
+		&copy; 2010 James Pierce<br />
+		<a href="http://james.is/developer">james.is/developer</a>
+	</div>
+</body>
+</html>

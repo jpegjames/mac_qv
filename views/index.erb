@@ -1,0 +1,17 @@
+<ul class="user_box">
+	<a name="top"></a>
+	<% previous_letter = "" %>
+	<% @users.sort.each do |user| %>
+	  <li><a href='/view/<%= user[0] %>' <%= "name='#{user[0][0].chr}'" if previous_letter != user[0][0].chr %>><%= user[0] %></a></li>
+		<% previous_letter = user[0][0].chr %>
+	<% end %>
+</ul>
+
+<% if @showAnchors %>
+<ul class="anchors">
+	<% anchors.each do |anchor| %>
+		<li><%= anchor %></li>
+	<% end %>
+</ul>
+<% end %>
+
